@@ -8,38 +8,46 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  console.log(activeSection)
 
-  // Handle scroll effect
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 10);
+  // // Handle scroll effect
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 10);
       
-      // Detect which section is in view
-      const sections = ['home', 'features', 'pricing', 'contact'];
-      for (const section of sections) {
-        const element = document.getElementById(section);
-        if (element) {
-          const rect = element.getBoundingClientRect();
-          if (rect.top <= 100 && rect.bottom >= 100) {
-            setActiveSection(section);
-            break;
-          }
-        }
-      }
-    };
+  //     // Detect which section is in view
+  //     const sections = [
+  //       'home', 'about-us', 'main-service', 
+  //       'main-service', 'popular-courses', 'team', 'contact-us'
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  //     ];
+  //     for (const section of sections) {
+  //       const element = document.getElementById(section);
+  //       // console.log(element)
+  //       if (element) {
+  //         const rect = element.getBoundingClientRect();
+  //         console.log(rect)
+  //         // if (rect.top <= 100 && rect.bottom >= 100) {
+  //           setActiveSection(section);
+  //           break;
+  //         // }
+  //       }
+  //     }
+  //   };
+
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, []);
 
   // Smooth scroll to section
   const scrollToSection = (sectionId: string) => {
     setIsMenuOpen(false);
+    setActiveSection(sectionId)
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
-        block: 'start'
+        block: 'center'
       });
     }
   };
