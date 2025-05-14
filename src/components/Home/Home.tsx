@@ -6,7 +6,7 @@ import { FaRegCircleCheck } from "react-icons/fa6";
 
 const Hero = () => {
   return (
-    <section className={styles.hero}>
+    <section className={styles.hero} id='home'>
       {/* Background Image */}
 
       <div className={styles.backgroundImage}>
@@ -24,8 +24,8 @@ const Hero = () => {
 
 
       <div className={styles.content}>
-        <h1 className={styles.title}>Your Trustworthy Tutoring Service</h1>
-        <p className={styles.subtitle}>In-home & Online Tutoring Service</p>
+        <h1 className={styles.title}>YOUR TRUSTED TUTORING</h1>
+        <p className={styles.subtitle}>Onsite & Online Tutoring Service</p>
         <div className={styles.qualifylist}>
             <div className={styles.qualifyitem}><FaRegCircleCheck className={styles.qualifyicon}/> Available in Canada </div>
             <div className={styles.qualifyitem}><FaRegCircleCheck className={styles.qualifyicon}/> No Contract Needed </div>
