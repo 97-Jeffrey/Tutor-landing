@@ -16,20 +16,27 @@ const AboutUs = () => {
             />
 
             <div className={styles.aboutUs}>
-                <div className={styles.header}>About Our Tutoring Service  </div>
+                <div className={styles.header}>
+                    Why choose our
+                    <b className={styles.bold_text}> service</b>
+                </div>
+                <div className={styles.underline}></div>
                 <div className={styles.description}>
-                    Our tutoring service in Burnaby helps students at all 
-                    grade levels prevent academic failure on a regular basis. 
+                    Our tutoring service in Burnaby helps students at 
+                    <b className={styles.bold_text}>all grade levels</b> 
+                    prevent academic failure on a regular basis. 
                     Our qualified tutors work on misunderstood concepts 
-                    individually with students by providing them the best 
-                    learning tools for any subject and effective study 
+                    individually with students by providing them the 
+                    <b className={styles.bold_text}>best 
+                    learning tools</b>for any subject and effective study 
                     techniques applicable throughout their entire academic 
                     journey! The role of a tutor is of course to help 
-                    students improve their grades, but also to increase
-                     their confidence and motivation at school. 
+                    students improve their grades, but also to 
+                    <b className={styles.bold_text}>increase
+                    their confidence and motivation</b>at school. 
                 </div>
-                <button className={styles.learnmorebutton}>Learn More</button>
-                
+                {/* <button className={styles.learnmorebutton}>Learn More</button> */}
+
 
             </div>
 
