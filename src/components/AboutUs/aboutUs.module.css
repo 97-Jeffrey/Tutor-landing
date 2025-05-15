@@ -19,7 +19,7 @@
     height: 500px;
     object-fit: cover;
     object-position: center;
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 .aboutUs {
@@ -28,57 +28,52 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 25px;
-    line-height: 2.0rem;
+    gap: 10px;
 }
 
 .header{
     font-size: 40px;
-    color: #424242;
-}
-.underline{
-    width: 100px;
-    height: 1px;
-    border: 2px solid #fa571c
-}
-.bold_text{
-    margin: 0px 8px 0px 8px;
-    font-weight: bold;
 }
 
+.bold_text {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.underline {
+    width: 100px;
+    height: 1px;
+    border: 1.5px solid #fa571c
+}
 .description {
-    font-size: 20px;
-    color: rgb(132, 131, 131);
+    font-size: 25px;
 }
 
 .learnmorebutton{
-    background-color:  #fa571c;
+    background-color: #ff4400;
     font-size: 20px;
     font-weight: bold;
     border: none;
     color: #fff;
     padding: 10px 20px 10px 20px;
-    border-radius: 6px;
+    border-radius: 10px;
     cursor: pointer
 
 }
 
-  @media (max-width: 1100px) {
-    .header{
-        line-height: 50px;
-    }
-  }
 
 
-  @media (max-width: 1000px) {
-    .container {
-        margin-top: 50px;
-        padding: 30px;
-    }
-  }
 
   /* Responsive adjustments */
+
+  @media (max-width: 1000px) {
+    .container{
+        padding: 30px;
+    }
+
+  }
   @media (max-width: 768px) {
+
     .content{
         flex-direction: column;
     }
