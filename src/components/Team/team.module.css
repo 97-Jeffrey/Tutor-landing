@@ -1,0 +1,98 @@
+.container{
+    margin-top: 100px;
+    width: 100%;
+    padding: 30px 150px 30px 150px;
+}
+
+.main_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:30px
+}
+
+
+
+.header_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header{
+    font-size: 40px;
+}
+
+
+.view_more_button{
+    border: 1px solid #fa571c;
+    font-size: large;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    color:#fa571c;
+    padding: 10px 20px 10px 20px
+}
+
+.view_more_button:hover{
+    background-color: #fa571c;
+    color: #fff;
+}
+
+.team_container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:30px;
+    overflow-x: scroll;
+}
+
+.team_card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.person_name{
+    font-size: 25px;
+}
+
+.person_note{
+    font-size: 20px;
+    color: gray
+}
+
+@media (max-width: 1000px) {
+    .container{
+        padding: 30px 
+    }
+}
+
+@media (max-width: 768px) {
+    .container{
+        margin-top: 50px;
+    }
+    .header_container{
+        flex-direction: column;
+        justify-content: center;
+        gap:20px
+    }
+}

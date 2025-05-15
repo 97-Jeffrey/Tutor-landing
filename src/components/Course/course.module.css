@@ -1,5 +1,6 @@
 
 .container{
+    margin-top: 100px;
     width: 100%;
     padding: 30px 150px 30px 150px;
 }
@@ -27,11 +28,24 @@
     font-size: 40px;
 }
 
+.course_container{
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:30px;
+    overflow-x: scroll;
+}
+ 
+
 .course_card{
 
-    width: 369px;
+    width: 350px;
     height: 400px;
     border-radius: 10px;
+    flex-shrink: 0;
     border: 2px solid rgb(241, 241, 241);
     cursor: pointer;
 
@@ -53,16 +67,6 @@
 .course_button:hover{
     background-color: #fa571c;
     color: #fff;
-}
-
-.course_container{
-   width: 100%;
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: row;
-   justify-content: start;
-   align-items: center;
-   gap:30px
 }
 
 .course_info_container{
@@ -154,7 +158,9 @@
 }
 
 @media (max-width: 768px) {
-
+    .container{
+        margin-top: 50px;
+    }
     .header_container{
         flex-direction: column;
         gap: 20px;
