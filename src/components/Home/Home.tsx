@@ -24,7 +24,7 @@ const Hero = () => {
 
 
       <div className={styles.content}>
-        <h1 className={styles.title}>YOUR TRUSTED TUTORING</h1>
+        <h1 className={styles.title}>YOUR TRUSTED TUTORING SERVICE</h1>
         <p className={styles.subtitle}>Onsite & Online Tutoring Service</p>
         <div className={styles.qualifylist}>
             <div className={styles.qualifyitem}><FaRegCircleCheck className={styles.qualifyicon}/> Available in Canada </div>
