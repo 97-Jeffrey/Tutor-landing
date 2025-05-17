@@ -9,6 +9,7 @@ import Link from 'next/link';
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter()
+  const pathName = usePathname()
 
   const handleCloseBar = () =>{
     setIsMenuOpen(false)
@@ -44,7 +45,7 @@ export default function Navbar() {
   
                 <Link 
                   href={item.route}
-                  className={`${styles.navLink} ${usePathname() === item.route? styles.active:""}`}
+                  className={`${styles.navLink} ${pathName === item.route? styles.active:""}`}
                 >
                   {item.label}
                 </Link>
@@ -72,7 +73,7 @@ export default function Navbar() {
                 <li key={item.id} className={styles.mobileNavItem}>
                    <Link 
                     href={item.route}
-                    className={`${styles.navLink} ${usePathname() === item.route? styles.active:""}`}
+                    className={`${styles.navLink} ${pathName === item.route? styles.active:""}`}
                     onClick={handleCloseBar}
                   >
                     {item.label}

@@ -9,16 +9,17 @@ import AVATAR from '@/assets/avatar.png'
 import AVATAR2 from '@/assets/avatar2.png'
 import AVATAR3 from '@/assets/avatar3.png'
 import AVATAR4 from '@/assets/avatar4.png'
-import AVATAR5 from '@/assets/avatar5.png'
+
+import { StaticImageData } from 'next/image';
 
 interface course {
     slug: string,
     name: string,
     type: string,
     description: string,
-    image?: any,
+    image: StaticImageData,
     instructor: string,
-    instructor_image?: any
+    instructor_image: StaticImageData
 }
 
 const COURSES: course[]  = [
