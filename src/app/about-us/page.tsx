@@ -37,7 +37,7 @@ export default function Page () {
                        className={styles.section_image}
                     />
                     <div className={styles.description}>
-                        we believe that education is not one-size-fits-all 
+                        {`we believe that education is not one-size-fits-all 
                         — every student deserves a learning experience 
                         that’s tailored to their unique strengths, 
                         challenges, and goals. Our passion for 
@@ -46,7 +46,7 @@ export default function Page () {
                         Whether they're striving to improve their grades, 
                         prepare for exams, or build confidence in a subject 
                         they once found intimidating, 
-                        we’re here to guide them every step of the way.
+                        we’re here to guide them every step of the way. `}
                     </div>
 
                 </div>
@@ -54,14 +54,14 @@ export default function Page () {
 
                 <div className={styles.section_reverse}>
                     <div className={styles.description}>
-                        We started this platform because we’ve seen 
+                        {`We started this platform because we’ve seen 
                         firsthand how personalized, focused attention 
                         can transform a student’s academic journey. Unlike 
                         crowded classrooms or generic online videos, 
                         our tutoring sessions are designed to be interactive, 
                         adaptable, and engaging. We match students with 
                         knowledgeable, patient tutors who don’t just 
-                        teach — they listen, encourage, and inspire.
+                        teach — they listen, encourage, and inspire. `}
                     </div>
                     <Image
                        src={OfficeImage2}
@@ -80,7 +80,7 @@ export default function Page () {
                        className={styles.section_image}
                     />
                     <div className={styles.description}>
-                        What sets us apart is our focus on quality, 
+                        {` What sets us apart is our focus on quality, 
                         flexibility, and results. Our tutors 
                         are carefully selected not only for their academic 
                         expertise, but also for their communication 
@@ -91,7 +91,7 @@ export default function Page () {
                         comfort of their own homes — no commuting, 
                         no stress. Most importantly, we track progress 
                         closely and adjust our teaching methods to 
-                        suit each learner’s pace and style.
+                        suit each learner’s pace and style. `}
 
 
                     </div>
