@@ -1,28 +1,27 @@
+'use client'
+
 import React from 'react';
 import styles from './course.module.css';
 import Image from 'next/image';
-import AP_ECON from '@/assets/ap_econ.png'
-import AP_CALCULUS from '@/assets/ap_calculus.png'
-import AP_CHEMISTRY from '@/assets/ap_chemistry.png'
-import AP_PHYSICS from '@/assets/ap_physics.png'
-import AVATAR1 from '@/assets/avatar.png'
-import AVATAR2 from '@/assets/avatar2.png'
-import AVATAR3 from '@/assets/avatar3.png'
-import AVATAR4 from '@/assets/avatar4.png'
-
 import { MdKeyboardArrowRight } from "react-icons/md";
-
 import data from '@/data/course';
+import { useRouter } from 'next/navigation';
 
 
 const Course = () => {
     const { COURSES } = data;
+    const router = useRouter()
     return (
         <section id='popular-course' className={styles.container}>
             <div className={styles.main_container}>
                 <div className={styles.header_container}>
                     <div className={styles.header}>Popular Courses</div>
-                    <button className={styles.course_button}>More Courses</button>
+                    <button 
+                        className={styles.course_button}
+                        onClick={()=> router.push('/course')}
+                    >
+                        More Courses
+                    </button>
                 </div>
 
                 <div className={styles.course_container}>
