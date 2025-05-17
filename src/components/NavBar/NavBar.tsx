@@ -19,7 +19,7 @@ export default function Navbar() {
     { id: 'home', route:'/', label: 'Home' },
     { id: 'about-us', route:'/about-us', label: 'About Us' },
     { id: 'main-service', route:'/main-service', label: 'Main Services' },
-    { id: 'popular-courses', route:'/popular-courses', label: 'Popular Courses' },
+    { id: 'course', route:'/course', label: 'Courses' },
     { id: 'team', route:'/team', label: 'Team' },
     { id: 'contact-us', route:'/contact-us', label: 'Contact Us' },
   ];
