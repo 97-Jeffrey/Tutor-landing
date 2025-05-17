@@ -1,4 +1,4 @@
-import AVATAR1 from '@/assets/avatar.png'
+
 
 import AP_ECON from '@/assets/ap_econ.png'
 import AP_CALCULUS from '@/assets/ap_calculus.png'
@@ -56,7 +56,7 @@ const COURSES: course[]  = [
         description:'AP courses/ 课程专为 G5 - G7 学生打造，物理、化学、生物三科任选，灵活又贴心',
         image: AP_PHYSICS,
         instructor: 'Alex Chen',
-        instructor_image: AVATAR5
+        instructor_image: AVATAR4
     },
 
 ]
