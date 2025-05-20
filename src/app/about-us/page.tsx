@@ -13,15 +13,6 @@ export default function Page () {
 
         <div className={styles.container}>
 
-       
-            <Image
-                src={StudyImage} // Update with your image path
-                alt="Background"
-
-                quality={100}
-                className={styles.image}
-            />
-        
             <div className={styles.main}>
 
 
@@ -101,6 +92,14 @@ export default function Page () {
                 </div>
                
             </div>
+
+            <Image
+                src={StudyImage} // Update with your image path
+                alt="Background"
+
+                quality={100}
+                className={styles.image}
+            />
         </div>
     )
 }
