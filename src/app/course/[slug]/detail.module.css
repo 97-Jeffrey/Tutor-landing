@@ -1,0 +1,160 @@
+.container {
+    width: 100%;
+}
+
+.main{
+    padding: 30px 100px 30px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+    padding: 20px;
+    width: 80%
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    opacity: 100%;
+    border-radius: 15px
+}
+
+.all_course_button_container{
+    width: 80%;
+    margin-top: 100px;
+    padding: 20px
+
+}
+
+.all_course_button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.all_course_button:hover{
+    color:#fa571c
+}
+
+.title_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.title{
+   width: 100%;
+   font-size:60px;
+   text-align: center;
+   font-weight: bold;
+   color: #242424;
+}
+
+.underline{
+    border: 2px solid  #fa571c;
+    width: 500px;
+    height: 1px;
+}
+
+.general_description{
+    width: 100%;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px
+}
+
+.course_type{
+    font-weight: bold;
+}
+
+.section_title{
+    font-weight: bold;
+    font-size: 25px;
+    font-size: #242424;
+}
+
+.target_audience{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px
+}
+
+.content_list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px
+}
+.content_item {
+    font-size: 18px;
+    color: rgb(111, 110, 110);
+}
+
+@media (max-width: 1000px) {
+    .all_course_button_container{
+        width: 100%;
+    }
+    .content{
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        padding: 30px
+    }
+    .general_description{
+        align-items: center;
+        text-align: center;
+    }
+    .image{
+        height: auto
+    }
+    .title{
+        font-size: 50px;
+    }
+
+    .underline{
+        width: 80%;
+    }
+}
+
+@media (max-width: 500px) {
+    .title{
+        font-size: 35px;
+    }
+    .image{
+        margin-top: 30px;
+    }
+    .general_description{
+        margin-top: 30px;
+    }
+}
