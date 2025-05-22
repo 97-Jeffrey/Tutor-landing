@@ -1,0 +1,32 @@
+
+.button{
+    border: 1px solid #fa571c;
+    font-size: large;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    color:#fa571c;
+    padding: 10px 20px 10px 20px
+}
+
+.button:hover{
+   background-color: #fa571c;
+   color: #fff;
+}
+
+.back_button{
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.back_button:hover{
+    color:#fa571c
+}
