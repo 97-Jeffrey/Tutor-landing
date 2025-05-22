@@ -1,32 +1,23 @@
-import React from 'react';
-import styles from './team.module.css';
 import Image from 'next/image';
-import data from '@/data/team';
+import styles from './team.module.css'
+import data from '@/data/team'
 import Link from 'next/link';
 
-import RouteButton from '@/elements/button/routeButton';
 
+export default function Page () {
+    const { TEAM }  = data;
 
-const Team = () => {
+    return (
+        <div className={styles.container}>
+            <div className={styles.main}>
+                <div className={styles.title_container}>
+                    <div className={styles.title}>Our Team</div>
+                    <div className={styles.underline}></div>
+                </div>
 
-  const { TEAM } = data;
-
-
-  return (
-    <section id='team' className={styles.container}>
-        <div className={styles.main_container}>
-            <div className={styles.header_container}>
-                <div className={styles.header}>Our Team</div>
-                <RouteButton 
-                   text='View More'
-                   url='/team'
-                   back={false}
-                />
-            </div>
-
-
-            <div className={styles.team_container}>
-                {
+                <div className={styles.team_section}>
+                    <div className={styles.team_container}>
+                    {
                     TEAM.map(member=>(
                         <Link href={`/team/${member.slug}`}
                             key={member.slug}
@@ -35,7 +26,7 @@ const Team = () => {
                                 className={styles.team_card}
                                 
                             >
-                                <Image 
+                                <Image
                                     src={member.image}
                                     alt={member.name}
                                     className={styles.avatar}
@@ -49,12 +40,11 @@ const Team = () => {
                     ))
                 }
 
+                    </div>
+
+                </div>
+
             </div>
-
         </div>
-
-    </section>
-  )
+    )
 }
-
-export default Team

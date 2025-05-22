@@ -1,0 +1,143 @@
+
+.container{
+    width: 100%;
+}
+
+.main{
+    padding: 30px 100px 30px 100px;
+}
+
+.image {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    margin-top: 50px;
+    height: 500px;
+    opacity: 100%;
+    filter: brightness(40%);
+}
+
+
+
+.title_container{
+
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.title{
+    width: 400px;
+    font-size:60px;
+    text-align: center;
+    font-weight: bold;
+    color: #242424;
+ }
+ 
+ .underline{
+     border: 2px solid  #fa571c;
+     width: 400px;
+     height: 1px;
+ }
+
+.team_section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.team_container{
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap:30px;
+}
+
+.team_card {
+    display: flex;
+    flex-shrink: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    cursor: pointer;
+}
+
+.avatar{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.detail_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.person_name{
+    font-size: 25px;
+}
+
+.person_note{
+    font-size: 20px;
+    color: gray
+}
+
+
+@media (max-width: 1000px) {
+    .container{
+        width: 100%;
+    }
+    .team_container{
+ 
+        justify-content: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        padding: 30px
+    }
+    .title_container{
+
+        margin-top: 50px;
+     }
+}
+
+@media (max-width: 500px) {
+    .main{
+        padding: 30px
+    }
+    .course_detail_container{
+        margin-top: 20px;
+        flex-direction: column;
+        align-items: start;
+        gap:20px
+    }
+    .course_detail_button{
+        padding: 0px
+    }
+    .title{
+        font-size: 50px;
+        width: 90%;
+    }
+    .underline{
+        width: 90%
+    }
+    
+ 
+}
