@@ -1,28 +1,25 @@
-'use client'
 
 import React from 'react';
 import styles from './course.module.css';
 import Image from 'next/image';
 import { MdKeyboardArrowRight } from "react-icons/md";
 import data from '@/data/course';
-import { useRouter } from 'next/navigation';
 import Link from 'next/link';
+import RouteButton from '@/elements/button/routeButton';
 
 
 const Course = () => {
     const { COURSES } = data;
-    const router = useRouter()
     return (
         <section id='popular-course' className={styles.container}>
             <div className={styles.main_container}>
                 <div className={styles.header_container}>
                     <div className={styles.header}>Popular Courses</div>
-                    <button 
-                        className={styles.course_button}
-                        onClick={()=> router.push('/course')}
-                    >
-                        More Courses
-                    </button>
+                    <RouteButton 
+                       text='More Courses'
+                       url='/course'
+                       back={false}
+                    />
                 </div>
 
                 <div className={styles.course_container}>
