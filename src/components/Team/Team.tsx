@@ -20,6 +20,7 @@ const Team = () => {
                 <RouteButton 
                    text='View More'
                    url='/team'
+                   back={false}
                 />
             </div>
 
