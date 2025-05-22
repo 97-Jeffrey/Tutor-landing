@@ -45,7 +45,9 @@ export default function Navbar() {
   
                 <Link 
                   href={item.route}
-                  className={`${styles.navLink} ${pathName === item.route? styles.active:""}`}
+                  className={`
+                    ${styles.navLink} 
+                    ${pathName === item.route ? styles.active:""}`}
                 >
                   {item.label}
                 </Link>

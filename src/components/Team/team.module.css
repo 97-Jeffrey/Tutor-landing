@@ -71,6 +71,14 @@
     object-fit: cover;
 }
 
+.detail_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .person_name{
     font-size: 25px;
 }
