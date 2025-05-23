@@ -2,8 +2,6 @@ import React from 'react';
 import styles from './aboutUs.module.css';
 import Image from 'next/image';
 import StudyImage from '../../assets/study.png'
-
-import data from '@/data/aboutUs';
 import AboutUSContent from './AboutUsContent';
 
 const AboutUs = () => {

@@ -1,7 +1,6 @@
 
 import React from 'react';
 import styles from './course.module.css';
-import RouteButton from '@/elements/button/routeButton';
 import CourseList from './CourseList';
 
 const Course = () => {
