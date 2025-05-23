@@ -112,7 +112,7 @@ const COURSES: course[]  = [
              `如需了解线上课程选项，欢迎咨询课程顾问获取详细信息。`
 
         ],
-        image: AP_ECON,
+        image: AP_CALCULUS,
         instructor: 'Miko Ela',
         instructor_ch:'小米',
         targetAudience: 'Grade 9 -12, No Basic Requirements',
@@ -154,7 +154,7 @@ const COURSES: course[]  = [
              `如需了解线上课程选项，欢迎咨询课程顾问获取详细信息。`
 
         ],
-        image: AP_ECON,
+        image: AP_CHEMISTRY,
         instructor: 'Wiki Wola',
         instructor_ch:'小微',
         targetAudience: 'Grade 9 -12, No Basic Requirements',
@@ -196,7 +196,7 @@ const COURSES: course[]  = [
              `如需了解线上课程选项，欢迎咨询课程顾问获取详细信息。`
 
         ],
-        image: AP_ECON,
+        image: AP_PHYSICS,
         instructor: 'Brian Wong',
         instructor_ch:'王明',
         targetAudience: 'Grade 9 -12, No Basic Requirements',
