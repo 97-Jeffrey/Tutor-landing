@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
+import { useLanguage } from '@/context/languageContext';
 import styles from './navbar.module.css';
 import Link from 'next/link';
 
@@ -10,6 +11,7 @@ export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const router = useRouter()
   const pathName = usePathname()
+  const { language, toggleLanguage } = useLanguage()
 
   const handleCloseBar = () =>{
     setIsMenuOpen(false)
@@ -17,12 +19,12 @@ export default function Navbar() {
 
 
   const navItems = [
-    { id: 'home', route:'/', label: 'Home' },
-    { id: 'about-us', route:'/about-us', label: 'About Us' },
-    { id: 'main-service', route:'/main-service', label: 'Main Services' },
-    { id: 'course', route:'/course', label: 'Courses' },
-    { id: 'team', route:'/team', label: 'Team' },
-    { id: 'contact-us', route:'/contact-us', label: 'Contact Us' },
+    { id: 'home', route:'/', label: language ==='en'? 'Home': '首页' },
+    { id: 'about-us', route:'/about-us', label: language ==='en'? 'About Us': "关于我们" },
+    { id: 'main-service', route:'/main-service', label: language ==='en'? 'Main Services':'主要服务' },
+    { id: 'course', route:'/course', label: language ==='en'? 'Courses':"课程" },
+    { id: 'team', route:'/team', label: language ==='en'? 'Team':"团队" },
+    { id: 'contact-us', route:'/contact-us', label:  language ==='en'?'Contact Us':"联系我们" },
   ];
 
   return (
@@ -84,6 +86,21 @@ export default function Navbar() {
               ))}
             </ul>
           </nav>
+        </div>
+
+        <div className={styles.language_toggle_container}>
+            <div 
+              className={`${styles.language_toggle_item} ${styles.eng} ${language ==='en'? styles.lang_selected:""}`  }
+              onClick={()=> toggleLanguage()}
+            >
+              Eng
+            </div>
+            <div 
+              className={`${styles.language_toggle_item} ${styles.ch} ${language ==='zh'? styles.lang_selected:""}`}
+              onClick={()=> toggleLanguage()}
+            >
+              中
+            </div>
         </div>
       </div>
     </header>
