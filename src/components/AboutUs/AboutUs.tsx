@@ -4,6 +4,7 @@ import Image from 'next/image';
 import StudyImage from '../../assets/study.png'
 
 import data from '@/data/aboutUs';
+import AboutUSContent from './AboutUsContent';
 
 const AboutUs = () => {
   return (
@@ -16,25 +17,14 @@ const AboutUs = () => {
                className={styles.image}
             />
 
-            <div className={styles.aboutUs}>
-                <div className={styles.header}>
-                    {data.HOME_TITLE}
-                </div>
-                <div className={styles.underline}></div>
-                <div className={styles.description}>
-                    {data.HOME_DESCRIPTIONS}
-                </div>
-                {/* <button className={styles.learnmorebutton}>Learn More</button> */}
+            <AboutUSContent />
 
-
-            </div>
-
+        
         </div>
 
   
 
 
-     
 
 
     </section>
