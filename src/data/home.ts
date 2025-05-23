@@ -1,7 +1,7 @@
 
 
 export const HEADER: string = 'YOUR TRUSTED TUTORING SERVICE'
-export const SUB_HEADER: String = 'Onsite & Online Tutoring Service'
+export const SUB_HEADER: string = 'Onsite & Online Tutoring Service'
 export const ATTRACTIONS: string[][] = [
     ['Available in Canada',  '全加拿大提供服务'],
     ['No Contract Needed', '无需合同'],
