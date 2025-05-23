@@ -9,7 +9,7 @@ export const ATTRACTIONS: string[][] = [
 ]
 
 export const HEADER_CH: string = '您值得信赖的补习机构'
-export const SUB_HEADER_CH: String = '线下 & 线上补习计划'
+export const SUB_HEADER_CH: string = '线下 & 线上补习计划'
 
 
 
