@@ -1,0 +1,36 @@
+
+
+.container{
+    width: 100%;
+}
+
+.main{
+    padding: 30px 100px 30px 100px;
+}
+
+
+
+.title_container{
+
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.title{
+   width: 400px;
+   font-size:60px;
+   text-align: center;
+   font-weight: bold;
+   color: #242424;
+}
+
+.underline{
+    border: 2px solid  #fa571c;
+    width: 400px;
+    height: 1px;
+}
