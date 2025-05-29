@@ -156,8 +156,6 @@ const TEAM: team_member[]  = [
     
 ]
 
-const TEAM_CH: team_member[] =[]
-
 const data ={
     TEAM
 }
