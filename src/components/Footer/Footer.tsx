@@ -28,7 +28,7 @@ const Footer  = () =>{
                     <div className={styles.navigator}>
                         <Link href={'/about-us'}>About Us</Link>
                         <Link href={'/main-service'}>Main Service</Link>
-                        <Link href={'/courses'}>Popular Courses</Link>
+                        <Link href={'/course'}>Popular Courses</Link>
                         <Link href={'/team'}>Our Team</Link>
                     </div>
 

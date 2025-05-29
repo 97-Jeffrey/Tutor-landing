@@ -105,6 +105,7 @@
     cursor: pointer;
     padding: 0;
     z-index: 10;
+    border: 1p solid red;
   }
   
   .menuButton:focus {
@@ -140,7 +141,7 @@
     top: 0px;
     right: 0;
     width: 100%;
-    /* height: 100vh; */
+    height: 350px;
     background: rgba(248, 247, 247, 0.98);
     backdrop-filter: blur(10px);
     z-index: 5;
@@ -156,8 +157,7 @@
   }
   
   .mobileNavList {
-    /* border: 1px solid red; */
-    margin: 20px;
+    margin-top: 70px;
     width: 100%;
     list-style: none;
     padding: 0;
@@ -193,8 +193,9 @@
 
   .language_toggle_item{
     border: 1px solid #242424;
-    width: 60px;
-    height: 30px;
+    font-size: 12px;
+    width: 35px;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -204,14 +205,14 @@
     
   }
   .eng{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     border-right: none;
   }
 
   .ch{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;;
   }
 
   .lang_selected{
