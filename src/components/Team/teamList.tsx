@@ -23,7 +23,7 @@ const TeamList = () =>{
             </div>
             <div className={styles.team_container}>
                 {
-                    TEAM.map(member=>(
+                    TEAM.slice(0,5).map(member=>(
                         <Link href={`/team/${member.slug}`}
                             key={member.slug}
                         >
