@@ -193,8 +193,9 @@
 
   .language_toggle_item{
     border: 1px solid #242424;
-    width: 60px;
-    height: 30px;
+    font-size: 12px;
+    width: 35px;
+    height: 25px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -204,14 +205,14 @@
     
   }
   .eng{
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
     border-right: none;
   }
 
   .ch{
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;;
   }
 
   .lang_selected{
