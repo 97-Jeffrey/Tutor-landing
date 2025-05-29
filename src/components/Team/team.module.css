@@ -47,11 +47,11 @@
 .team_container{
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: row;
     justify-content: start;
     align-items: center;
     gap:30px;
-    overflow-x: scroll;
 }
 
 .team_card {
@@ -97,6 +97,9 @@
 @media (max-width: 768px) {
     .container{
         margin-top: 50px;
+    }
+    .team_container{
+        justify-content: center;
     }
     .header_container{
         flex-direction: column;
