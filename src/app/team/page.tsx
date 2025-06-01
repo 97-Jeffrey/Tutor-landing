@@ -1,17 +1,21 @@
+'use client'
+
 import Image from 'next/image';
 import styles from './team.module.css'
 import data from '@/data/team'
 import Link from 'next/link';
+import { useLanguage } from '@/context/languageContext';
 
 
 export default function Page () {
     const { TEAM }  = data;
+    const { language } = useLanguage()
 
     return (
         <div className={styles.container}>
             <div className={styles.main}>
                 <div className={styles.title_container}>
-                    <div className={styles.title}>Our Team</div>
+                    <div className={styles.title}>{language==='en'?  `Our Team`:`我们的团队`}</div>
                     <div className={styles.underline}></div>
                 </div>
 
@@ -32,8 +36,8 @@ export default function Page () {
                                     className={styles.avatar}
                                 />
                                 <div className={styles.detail_container}>
-                                    <div className={styles.person_name}>{member.name}</div>
-                                    <div className={styles.person_note}>{member.note}</div>
+                                    <div className={styles.person_name}>{language==='en'? member.name: member.name_ch}</div>
+                                    <div className={styles.person_note}>{language==='en'? member.note: member.note_ch}</div>
                                 </div>
                             </div>
                         </Link>
