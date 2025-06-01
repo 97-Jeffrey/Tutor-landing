@@ -1,3 +1,4 @@
+'use client'
 
 import React from "react"
 import styles from './course.module.css'
@@ -6,17 +7,19 @@ import courseImage from '@/assets/course.png'
 import data from '@/data/course'
 import { MdKeyboardArrowRight } from "react-icons/md"
 import Link from "next/link"
+import { useLanguage } from "@/context/languageContext"
 
 
 export default function Page () {
     const { COURSES } = data;
+    const { language } = useLanguage()
     return (
         <div className={styles.container}>
 
             <div className={styles.main}>
 
                 <div className={styles.title_container}>
-                    <div className={styles.title}>Our Courses</div>
+                    <div className={styles.title}>{language ==='en'?`Our Courses`:`我们的课程`}</div>
                     <div className={styles.underline}></div>
                 </div>
 
@@ -40,8 +43,8 @@ export default function Page () {
                                     />
 
                                     <div className={styles.course_info_container}>
-                                    <div className={styles.course_name}>{course.name}</div>
-                                    <div className={styles.course_type}>{course.description}</div>
+                                    <div className={styles.course_name}>{language==='en'? course.name: course.name_ch}</div>
+                                    <div className={styles.course_type}>{language==='en'? course.description: course.description_ch}</div>
                                     <div className={styles.course_detail_container}>
                                         <div className={styles.course_avatars}>
                                             <Image 
@@ -49,9 +52,9 @@ export default function Page () {
                                                 alt='avatar'
                                                 className={styles.avatar}
                                             />
-                                            <div>By {course.instructor}</div>
+                                            <div>{language==='en'? `By ${course.instructor}`: `由 ${course.instructor_ch}老师主讲 `}</div>
                                         </div>
-                                        <button className={styles.course_detail_button}>Course Detail <MdKeyboardArrowRight /></button>
+                                        <button className={styles.course_detail_button}>{language==='en'? `Course Detail`:`更多细节`} <MdKeyboardArrowRight /></button>
                                     </div>
                                 </div>
 
