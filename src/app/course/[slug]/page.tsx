@@ -5,8 +5,6 @@ import styles from './detail.module.css'
 import { useParams } from 'next/navigation';
 import  data from '@/data/course'
 import Image from "next/image";
-import { MdKeyboardArrowLeft } from "react-icons/md";
-import { useRouter } from "next/navigation";
 import { useLanguage } from "@/context/languageContext";
 import RouteButton from "@/elements/button/routeButton";
 
@@ -14,7 +12,6 @@ export default function Page () {
 
     const params = useParams();
     const { language } = useLanguage();
-    const router = useRouter()
     const { slug } = params;
 
     const course  = data.COURSES.find(course=> course.slug ===slug)
