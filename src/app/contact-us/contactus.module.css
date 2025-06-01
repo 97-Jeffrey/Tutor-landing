@@ -1,0 +1,133 @@
+
+
+.container{
+    width: 100%;
+}
+
+.main{
+    padding: 30px 100px 30px 100px;
+}
+
+
+.title_container{
+
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px
+}
+
+.title{
+    width: 400px;
+    font-size:60px;
+    text-align: center;
+    font-weight: bold;
+    color: #242424;
+ }
+ 
+ .underline{
+    border: 2px solid  #fa571c;
+    width: 400px;
+    height: 1px;
+ }
+
+.blocks{
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+
+.blocks2{
+    padding: 50px;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    box-shadow:   0 0 10px #cbcbcb;
+}
+
+.block{
+    padding: 20px;
+    border-radius: 20px;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:15px;
+    box-shadow:  0 0 10px #cbcbcb;
+}
+
+.phone_block{
+    background-color: #fce7df;
+}
+
+.email_block{
+    background-color: rgb(173, 251, 173);
+}
+.block_title{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.block_title_2{
+    font-size: 40px;
+}
+
+.block_content{
+   border-radius: 20px;
+   font-size: 30px;
+   background-color: #424242;
+   color: #fff;
+   padding: 10px 30px 10px 30px;
+}
+ 
+.form{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:20px;
+}
+
+.formItem{
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap:10px
+}
+
+.label{
+    font-size: 25px;
+}
+.input{
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000
+}
+
+.send_button{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+}

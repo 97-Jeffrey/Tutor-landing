@@ -5,10 +5,12 @@ import { useParams } from 'next/navigation';
 import data from '@/data/team'
 import Image from 'next/image';
 import RouteButton from '@/elements/button/routeButton';
+import { useLanguage } from '@/context/languageContext';
 
 export default function Page () {
 
     const params = useParams();
+    const { language } = useLanguage();
     const { slug } = params;
 
 
@@ -19,7 +21,7 @@ export default function Page () {
             <div className={styles.main}>
                 <div className={styles.all_team_button_container}>
                         <RouteButton 
-                           text='Team'
+                           text={language ==='en'?`Team`: `其他团队成员`}
                            url='/team'
                            back={true}
                         />
@@ -34,9 +36,9 @@ export default function Page () {
                         className={styles.image}
                     />}
 
-                    <div className={styles.name}>{member?.name}</div>
-                    <div className={styles.note}>{member?.note}</div>
-                    <div className={styles.personal_detail}>{member?.personal_detail}</div>
+                    <div className={styles.name}>{language ==='en'? member?.name: member?.name_ch}</div>
+                    <div className={styles.note}>{language ==='en'?  member?.note: member?.note_ch}</div>
+                    <div className={styles.personal_detail}>{language ==='en'? member?.personal_detail: member?.personal_detail_ch}</div>
 
                 </div>
             </div>
