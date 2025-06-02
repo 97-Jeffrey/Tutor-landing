@@ -161,6 +161,7 @@
         justify-content: center;
 
     }
+
 }
 
 @media (max-width: 768px) {
@@ -171,5 +172,16 @@
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+}
+
+@media (max-width: 500px) {
+    .course_card{
+        width: 100%;
+        height:auto
+    }
+    .course_thnumbnail{
+        width: 100%;
+        height: auto
     }
 }
