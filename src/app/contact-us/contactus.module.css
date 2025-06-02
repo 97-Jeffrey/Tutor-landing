@@ -53,11 +53,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap:30px;
     box-shadow:   0 0 10px #cbcbcb;
 }
 
 .block{
-    padding: 20px;
+    padding: 50px;
     border-radius: 20px;
     width: 50%;
     height: 150px;
@@ -94,10 +95,10 @@
 }
  
 .form{
-    margin-top: 30px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
     align-items: start;
     gap:20px;
 }
@@ -112,7 +113,7 @@
 }
 
 .label{
-    font-size: 25px;
+    font-size: 20px;
 }
 .input{
     width: 100%;
@@ -130,4 +131,85 @@
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
+    margin-top: 30px;
+}
+
+.message{
+    margin-top: 30px;
+    color: green
+}
+
+.message_error{
+    margin-top: 30px;
+    color: red
+}
+
+
+@media (max-width: 1000px) {
+
+   .blocks{
+        flex-direction: column;
+   }
+   .block{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+   }
+    .block_title{
+        font-size: 25px;
+    }
+
+    .block_content{
+         font-size: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main{
+        padding: 30px
+    }
+    .title_container{
+
+        margin-top: 50px;
+    }
+    .form{
+
+        justify-content: center;
+        align-items: center;
+    }
+    .block_title{
+        width: 100%;
+        text-align: center;
+    }
+    .send_button{
+        text-align: center;
+    }
+    .formItem{
+        width: 100%;
+    }
+}
+
+@media (max-width: 500px) {
+    .title{
+        font-size: 40px;
+        width: 90%;
+    }
+    .underline{
+        width: 90%
+    }
+    .blocks{
+        margin-top: 30px;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .block_content{
+        font-size: 16px;
+   }
+   .blocks2{
+        padding: 15px
+   }
+
 }
