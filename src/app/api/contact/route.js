@@ -3,6 +3,9 @@ import nodemailer from 'nodemailer';
 export async function POST(request) {
   const { name, email, message } = await request.json();
 
+  console.log('EMAIL_USER:', process.env.EMAIL_USER);
+  console.log('EMAIL_PASS is defined:', process.env.EMAIL_PASS);
+
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
