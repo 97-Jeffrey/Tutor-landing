@@ -17,15 +17,54 @@ const HOME_DESCRIPTIONS_CH: string  = `
 更是为了增强他们在学校中的自信心和学习动力。
 
 `
+const ABOUT_US_DETAIL_HEADER: string = `
+  Strategic Academic & Career Planning
+`
+
+const ABOUT_US_DETAIL_HEADER_2: string = `
+  Industry & Job Market Insights
+`
+
+const ABOUT_US_DETAIL_HEADER_3: string = `
+ Maximizing Your Educational Investment
+`
+
+const ABOUT_US_DETAIL_HEADER_4: string = `
+ Ongoing Progress Supervision
+`
+
+const ABOUT_US_DETAIL_HEADER_5: string = `
+ Proactive Problem Solving
+`
 
 const ABOUT_US_DETAIL_1: string =  `
-   we believe that education is not one-size-fits-all — every student 
-   deserves a learning experience that’s tailored to their unique 
-   strengths, challenges, and goals. Our passion for tutoring stems 
-   from a deep commitment to helping students reach their full potential. 
-   Whether they're striving to improve their grades, prepare for exams, 
-   or build confidence in a subject they once found intimidating, 
-   we’re here to guide them every step of the way.
+   Our MA and PhD-level consulting team offers more than 
+   just support with university admissions—they provide expert 
+   guidance for building a long-term academic and career path.
+`
+
+const ABOUT_US_DETAIL_2: string =`
+   With a deep understanding of current industry trends and employment 
+   challenges, our consultants help 
+   students choose programs that align with their strengths and lead to 
+   meaningful, future-proof careers.
+`
+
+
+const ABOUT_US_DETAIL_3: string =`
+  We understand that university is a major investment of time 
+  and resources. That’s why we focus on making sure every academic 
+  decision is aligned with long-term success and return on investment.
+`
+
+const ABOUT_US_DETAIL_4: string =`
+  We closely monitor students' progress on a weekly and monthly basis 
+  to ensure they are on the right track and receiving the support they need.
+`
+
+const ABOUT_US_DETAIL_5: string =`
+ By identifying and addressing academic challenges early, we help 
+ students overcome obstacles before they grow into serious issues.
 `
 
 const ABOUT_US_DETAIL_1_CH: string = `
@@ -35,14 +74,6 @@ const ABOUT_US_DETAIL_1_CH: string = `
    无论是提升成绩、备考应试，还是在曾经感到棘手的科目中建立信心，我们都将全程陪伴，给予学生持续的支持与引导。
 `
 
-const ABOUT_US_DETAIL_2: string =`
-   We started this platform because we’ve seen 
-   firsthand how personalized, focused attention can transform a 
-   student’s academic journey. Unlike crowded classrooms or generic online 
-   videos, our tutoring sessions are designed to be interactive, 
-   adaptable, and engaging. We match students with knowledgeable, 
-   patient tutors who don’t just teach — they listen, encourage, and inspire.
-`
 const ABOUT_US_DETAIL_2_CH: string =`
    我们创办这个平台，是因为我们亲眼见证了个性化和专注辅导如何改变一个学生的学习旅程。
 不同于拥挤的课堂或千篇一律的在线视频，我们的辅导课程注重互动性、灵活性与参与感。
@@ -50,18 +81,6 @@ const ABOUT_US_DETAIL_2_CH: string =`
 我们会为学生匹配专业且有耐心的导师，他们不仅仅是教学者，更是倾听者、鼓励者和激励者。
 
 
-`
-
-const ABOUT_US_DETAIL_3: string =`
-  What sets us apart is our focus on quality, 
-  flexibility, and results. Our tutors are carefully selected
-   not only for their academic expertise, but also for their 
-   communication skills and ability to connect with students. Sessions 
-   can be scheduled at times that work for busy families, and 
-   our online format ensures that students can learn from the 
-   comfort of their own homes — no commuting, no stress. Most 
-   importantly, we track progress closely and adjust our teaching 
-   methods to suit each learner’s pace and style.
 `
 
 const ABOUT_US_DETAIL_3_CH: string =`
@@ -86,7 +105,14 @@ const data = {
     ABOUT_US_DETAIL_2,
     ABOUT_US_DETAIL_2_CH,
     ABOUT_US_DETAIL_3,
-    ABOUT_US_DETAIL_3_CH
+    ABOUT_US_DETAIL_3_CH,
+    ABOUT_US_DETAIL_4,
+    ABOUT_US_DETAIL_5,
+    ABOUT_US_DETAIL_HEADER,
+    ABOUT_US_DETAIL_HEADER_2,
+    ABOUT_US_DETAIL_HEADER_3,
+    ABOUT_US_DETAIL_HEADER_4,
+    ABOUT_US_DETAIL_HEADER_5
 }
 
 

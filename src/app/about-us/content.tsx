@@ -15,6 +15,8 @@ const Content = () =>{
         ABOUT_US_DETAIL_1,
         ABOUT_US_DETAIL_2,
         ABOUT_US_DETAIL_3,
+        ABOUT_US_DETAIL_4,
+        ABOUT_US_DETAIL_5,
         ABOUT_US_DETAIL_1_CH,
         ABOUT_US_DETAIL_2_CH,
         ABOUT_US_DETAIL_3_CH
@@ -35,24 +37,68 @@ const Content = () =>{
                     alt={'office image'}
                     className={styles.section_image}
                     />
-                    <div className={styles.description}>
-                        {
-                        language==='en'?
-                        ABOUT_US_DETAIL_1:
-                        ABOUT_US_DETAIL_1_CH
-                        }
+                    <div className={styles.detail_container}>
+                        <div className={styles.detail_section}>
+                            <div className={styles.header}>
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER: data.HOME_TITLE_CH}
+                            </div>
+                            <div className={styles.description}>
+                                {
+                                language==='en'?
+                                ABOUT_US_DETAIL_1:
+                                ABOUT_US_DETAIL_1_CH
+                                }
+                            </div>
+                        </div>
+                        <div className={styles.detail_section}>
+                            <div className={styles.header}>
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_2: data.HOME_TITLE_CH}
+                            </div>
+
+                            <div className={styles.description}>
+                                {
+                                language==='en'?
+                                ABOUT_US_DETAIL_2:
+                                ABOUT_US_DETAIL_1_CH
+                                }
+                            </div>
+                        </div>
+
                     </div>
 
                 </div>
 
 
                 <div className={styles.section_reverse}>
-                    <div className={styles.description}>
-                       {
-                        language==='en'?
-                        ABOUT_US_DETAIL_2:
-                        ABOUT_US_DETAIL_2_CH
-                        }
+                   <div className={styles.detail_container}>
+                        <div className={styles.detail_section}>
+                            <div className={styles.header}>
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_3: data.HOME_TITLE_CH}
+                            </div>
+                            <div className={styles.description}>
+                            {
+                                language==='en'?
+                                ABOUT_US_DETAIL_3:
+                                ABOUT_US_DETAIL_2_CH
+                                }
+                            </div>
+                        </div>
+
+                        <div className={styles.detail_section}>
+
+                            <div className={styles.header}>
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_4: data.HOME_TITLE_CH}
+                            </div>
+
+                            <div className={styles.description}>
+                            {
+                                language==='en'?
+                                ABOUT_US_DETAIL_4:
+                                ABOUT_US_DETAIL_2_CH
+                                }
+                            </div>
+                        </div>
+
                     </div>
                     <Image
                     src={OfficeImage2}
@@ -70,14 +116,17 @@ const Content = () =>{
                     alt={'office image'}
                     className={styles.section_image}
                     />
-                    <div className={styles.description}>
-                       {
-                        language==='en'?
-                        ABOUT_US_DETAIL_3:
-                        ABOUT_US_DETAIL_3_CH
-                        }
-
-
+                    <div className={styles.detail_container}>
+                        <div className={styles.header}>
+                            {language === 'en'? data.ABOUT_US_DETAIL_HEADER_5: data.HOME_TITLE_CH}
+                        </div>
+                        <div className={styles.description}>
+                           {
+                            language==='en'?
+                            ABOUT_US_DETAIL_5:
+                            ABOUT_US_DETAIL_3_CH
+                            }
+                        </div>
                     </div>
                     
                     
