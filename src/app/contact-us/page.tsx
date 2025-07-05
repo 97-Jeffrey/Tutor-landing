@@ -17,7 +17,7 @@ export default function Page(){
         const { name, email } = form;
         e.preventDefault();
         if(!name || !email){ 
-            setStatus(language ==='en'?'Please Enter both of your Name and Email':"请填写你的姓名和邮箱")
+            setStatus(language ==='en'?'Please Enter both of your Name and Email':"请填写您的姓名和邮箱")
             return;
         }
         setStatus(language ==='en'?'Sending...':'发送中');

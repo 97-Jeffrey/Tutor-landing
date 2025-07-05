@@ -13,7 +13,14 @@ const AboutUSContent = () =>{
                 </div>
                 <div className={styles.underline}></div>
                 <div className={styles.description}>
-                    {language ==='en'? data.HOME_DESCRIPTIONS: data.HOME_DESCRIPTIONS_CH}
+                    {data.HOME_DESCRIPTIONS.map(des=>(
+                         (<div key={des} className={styles.description_item}>
+                            {des}
+                        </div>)
+                    ))}
+                    {/* {language ==='en'?
+                     data.HOME_DESCRIPTIONS: 
+                     data.HOME_DESCRIPTIONS_CH} */}
                 </div>
 
             </div>

@@ -1,11 +1,11 @@
 
 
-export const HEADER: string = 'YOUR TRUSTED TUTORING SERVICE'
-export const SUB_HEADER: string = 'Onsite & Online Tutoring Service'
+export const HEADER: string = 'AC Personal Education Consultant'
+export const SUB_HEADER: string = 'Book Your Free Consulting Today'
 export const ATTRACTIONS: string[][] = [
-    ['Available in Canada',  '全加拿大提供服务'],
-    ['No Contract Needed', '无需合同'],
-    [ 'Numerous courses to begin',  '多课程选择']
+    ['Call 647-994-6481',  '全加拿大提供服务'],
+    ['Text 647-994-6481', '无需合同'],
+    [ 'Email aaronllllourea@gmail.com',  '多课程选择']
 ]
 
 export const HEADER_CH: string = '您值得信赖的补习机构'

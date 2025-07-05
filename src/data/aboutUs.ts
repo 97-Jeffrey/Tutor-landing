@@ -1,13 +1,10 @@
 
-const HOME_TITLE: string = `Why choose our service`
-const HOME_DESCRIPTIONS: string = `Our tutoring service in 
-Burnaby helps students atall grade levelsprevent academic failure 
-on a regular basis. Our qualified tutors work on misunderstood concepts 
-individually with students by providing them thebest learning toolsfor any 
-subject and effective study techniques applicable throughout their 
-entire academic journey! The role of a tutor is of course 
-to help students improve their grades, but also toincrease 
-their confidence and motivationat school.`
+const HOME_TITLE: string = `We provide`
+const HOME_DESCRIPTIONS: string[] = [
+   `- Long-term guidance from high school onwards to ensure steady progress and alignment with university goals`,
+   `- Expert tutoring in AP, IB, A-Level, and standard high school courses tailored to each student’s needs.`,
+   `- Assistance with individual academic research and personalized recommendation letters from PhD-level mentors to strengthen applications.`
+]
 
 const HOME_TITLE_CH: string =  `为何选择我们`
 
