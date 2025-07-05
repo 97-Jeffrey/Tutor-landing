@@ -45,6 +45,7 @@
   
   /* Desktop navigation */
   .desktopNav {
+
     display: none;
   }
   
@@ -101,15 +102,15 @@
     width: 2rem;
     height: 2rem;
     background: transparent;
-    border: none;
     cursor: pointer;
     padding: 0;
     z-index: 10;
-    border: 1p solid red;
+    border: none;
   }
   
   .menuButton:focus {
     outline: none;
+    border: none
   }
   
   .menuButtonBar {

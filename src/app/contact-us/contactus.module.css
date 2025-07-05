@@ -87,11 +87,11 @@
 }
 
 .block_content{
-   border-radius: 20px;
+   border-radius: 10px;
    font-size: 30px;
    background-color: #424242;
    color: #fff;
-   padding: 10px 30px 10px 30px;
+   padding: 10px 20px 10px 20px;
 }
  
 .form{
