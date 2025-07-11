@@ -3,9 +3,7 @@
 import React from "react"
 import styles from './course.module.css'
 import Image from "next/image"
-import courseImage from '@/assets/course.png'
 import data from '@/data/course'
-import { MdKeyboardArrowRight } from "react-icons/md"
 import Link from "next/link"
 import { useLanguage } from "@/context/languageContext"
 

@@ -6,7 +6,7 @@ import data from '@/data/whyUs';
 
 
 const WhyUsContent = () =>{
-    const { language } = useLanguage()
+    // const { language } = useLanguage()
     return (
         <>
             <div className={styles.whyUs}>

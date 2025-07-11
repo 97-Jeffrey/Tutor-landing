@@ -52,12 +52,12 @@ const Content = () =>{
             >
                 
                 <div className={styles.main_service_detail}>
-                    {serviceDetail.map((eachService: [title: string], index: number)=>{
-                         const [title, description] = Object.entries(eachService)[0];
+                    {serviceDetail.map((eachService, index: number)=>{
+                        const { key, value} = eachService;
                         return (
                             <div key={index}>
-                                <div className={styles.detail_title}>{title}</div>
-                                <div>{description}</div>
+                                <div className={styles.detail_title}>{key}</div>
+                                <div>{value}</div>
                            </div>
                         )
                    })}

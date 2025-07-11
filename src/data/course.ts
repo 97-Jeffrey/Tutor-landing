@@ -1,16 +1,16 @@
 
 
-import AP_ECON from '@/assets/ap_econ.png'
-import AP_CALCULUS from '@/assets/ap_calculus.png'
-import AP_CHEMISTRY from '@/assets/ap_chemistry.png'
+// import AP_ECON from '@/assets/ap_econ.png'
+// import AP_CALCULUS from '@/assets/ap_calculus.png'
+// import AP_CHEMISTRY from '@/assets/ap_chemistry.png'
 import AP_COURSE from '@/assets/ap_course.png'
 import IB_COURSE from '@/assets/ib_course.png'
 import HIGH_SCHOOL from '@/assets/high_school.png'
 
-import AVATAR from '@/assets/avatar.png'
+// import AVATAR from '@/assets/avatar.png'
 import AVATAR2 from '@/assets/avatar2.png'
-import AVATAR3 from '@/assets/avatar3.png'
-import AVATAR4 from '@/assets/avatar4.png'
+// import AVATAR3 from '@/assets/avatar3.png'
+// import AVATAR4 from '@/assets/avatar4.png'
 
 import { StaticImageData } from 'next/image';
 
@@ -27,7 +27,7 @@ interface course {
     content_ch?: string [],
     timing?: string,
     timing_ch?: string,
-    format?: any,
+    format?: {},
     format_ch?: string[],
     image: StaticImageData,
     instructor?: string,

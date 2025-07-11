@@ -2,8 +2,6 @@ import styles from "./page.module.css";
 
 import Hero from "@/components/Home/Home";
 import AboutUs from "@/components/AboutUs/AboutUs";
-import Course from "@/components/Course/Course";
-import Team from "@/components/Team/Team";
 import WhyUs from "@/components/WhyUs/whyUs";
 
 export default function Home() {
