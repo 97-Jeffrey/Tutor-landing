@@ -88,10 +88,14 @@
 
 .block_content{
    border-radius: 10px;
-   font-size: 30px;
-   background-color: #424242;
-   color: #fff;
-   padding: 10px 20px 10px 20px;
+   font-weight: bold;
+   font-size: 40px;
+   color: #424242;
+   cursor: pointer;
+}
+
+.block_content:hover{
+    color:  #fa571c;
 }
  
 .form{

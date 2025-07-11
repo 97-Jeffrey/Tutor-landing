@@ -15,7 +15,7 @@ export default function Page () {
     const { slug } = params;
 
     const course  = data.COURSES.find(course=> course.slug ===slug)
-    const courseContent = language==='en'? course?.content || []: course?.content_ch ||[];
+    const content = language==='en'? course?.content || []: course?.content_ch ||[];
     const courseFormat = language ==='en'? course?.format || []: course?.format_ch||[];
 
     return (
@@ -48,47 +48,33 @@ export default function Page () {
                             className={styles.image}
                         />
                     }
+                    {slug === 'high-school'?
+                    <div className={styles.high_school_container}>
+                        <div className={styles.section_title}>Available Courses</div>
+                        <div className={styles.high_school_text}>All High School Course</div>
 
-                    <div className={styles.general_description}>
-                    
-                        <div> 
-                            <span className={styles.course_type}>
-                                {language ==='en'? course?.type: course?.type_ch}
-                            </span> 
-                            / 
-                            {language ==='en'? course?.description: course?.description_ch}
-                        </div>
                     </div>
-
+                        :
                     <div className={styles.target_audience}>
-                        <div className={styles.section_title}> {language ==='en'?`Target Student`:`目标群体`} </div>
-                        <div>{language ==='en'? course?.targetAudience: course?.targetAudience_ch}</div>
-                    </div>
-
-
-
-                    <div className={styles.target_audience}>
-                        <div className={styles.section_title}>{language ==='en'?`Course Content`:`课程内容` }</div>
+                        <div className={styles.section_title}>{language ==='en'?`Avalable Courses`:`所有课程`} </div>
                         <div className={styles.content_list}>
-                            {courseContent.map(item=> (
-                                <div className={styles.content_item} key={item}> • &nbsp;{item}</div>
+                            {content.map(item=> (
+                                <div 
+                                    className={styles.content_item_section} key={item}
+                                > 
+                                    <div className={styles.course_item_title}>{item}</div>
+                                    <div className={styles.course_item_list}>
+                                        {
+                                            courseFormat[item].map((each: string, index: string)=>
+                                                <div key={index} className={styles.course_item}>{each}</div>
+                                            )
+                                        }
+                                    </div>
+                                </div>
                             ))}
                         </div>
                     </div>
-
-                    <div className={styles.target_audience}>
-                        <div className={styles.section_title}>{language ==='en'?`Course Format`:`课程模式`} </div>
-                        <div className={styles.content_list}>
-                            {courseFormat.map(item=> (
-                                <div className={styles.content_item} key={item}> • &nbsp;{item}</div>
-                            ))}
-                        </div>
-                    </div>
-
-                    <div className={styles.target_audience}>
-                        <div className={styles.section_title}>{language ==='en'?`How long is it?`:`时长`} </div>
-                        <div>{language ==='en'? course?.timing: course?.timing_ch}</div>
-                    </div>
+                    }
 
                 </div>
 

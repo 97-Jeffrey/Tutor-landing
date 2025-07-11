@@ -23,7 +23,7 @@ export default function Navbar() {
     { id: 'about-us', route:'/about-us', label: language ==='en'? 'About Us': "关于我们" },
     { id: 'main-service', route:'/main-service', label: language ==='en'? 'Main Services':'主要服务' },
     { id: 'course', route:'/course', label: language ==='en'? 'Courses':"课程" },
-    { id: 'team', route:'/team', label: language ==='en'? 'Team':"团队" },
+    // { id: 'team', route:'/team', label: language ==='en'? 'Team':"团队" },
     { id: 'contact-us', route:'/contact-us', label:  language ==='en'?'Contact Us':"联系我们" },
   ];
 

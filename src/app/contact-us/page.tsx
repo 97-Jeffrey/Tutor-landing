@@ -13,6 +13,13 @@ export default function Page(){
       setForm({ ...form, [e.target.name]: e.target.value });
     };
 
+    const handleClickEmail = () =>{
+        const email = 'someone@example.com';
+        const subject = encodeURIComponent('Consulting for more info');
+        const body = encodeURIComponent('I want to know more about AC tutoring!');
+        window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
+    }
+
     const handleSubmit = async (e: React.FormEvent) => {
         const { name, email } = form;
         e.preventDefault();
@@ -48,7 +55,10 @@ export default function Page(){
                         </div>
                         <div className={styles.block}>
                             <div className={styles.block_title}>{language ==='en'? `Email us at`:`请发邮件至`}</div>
-                            <div className={styles.block_content}>abcde@gmail.com</div>
+                            <div 
+                                className={styles.block_content}
+                                onClick={handleClickEmail}
+                            >abcde@gmail.com</div>
                         </div>
                     </div>
 

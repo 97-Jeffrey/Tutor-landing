@@ -43,20 +43,9 @@ export default function Page () {
                                     />
 
                                     <div className={styles.course_info_container}>
-                                    <div className={styles.course_name}>{language==='en'? course.name: course.name_ch}</div>
-                                    <div className={styles.course_type}>{language==='en'? course.description: course.description_ch}</div>
-                                    <div className={styles.course_detail_container}>
-                                        <div className={styles.course_avatars}>
-                                            <Image 
-                                                src={course.instructor_image}
-                                                alt='avatar'
-                                                className={styles.avatar}
-                                            />
-                                            <div>{language==='en'? `By ${course.instructor}`: `由 ${course.instructor_ch}老师主讲 `}</div>
-                                        </div>
-                                        <button className={styles.course_detail_button}>{language==='en'? `Course Detail`:`更多细节`} <MdKeyboardArrowRight /></button>
+                                        <div className={styles.course_name}>{language==='en'? course.name: course.name_ch}</div>
+                                        <div className={styles.course_type}>{language==='en'? course.description: course.description_ch}</div>
                                     </div>
-                                </div>
 
 
                                 </div>
@@ -68,13 +57,13 @@ export default function Page () {
 
             </div>
 
-            <Image
+            {/* <Image
                 src={courseImage} // Update with your image path
                 alt="Background"
 
                 quality={100}
                 className={styles.image}
-            />
+            /> */}
 
         </div>
 

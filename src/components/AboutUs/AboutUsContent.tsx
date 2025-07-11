@@ -18,9 +18,6 @@ const AboutUSContent = () =>{
                             {des}
                         </div>)
                     ))}
-                    {/* {language ==='en'?
-                     data.HOME_DESCRIPTIONS: 
-                     data.HOME_DESCRIPTIONS_CH} */}
                 </div>
 
             </div>

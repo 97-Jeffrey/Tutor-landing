@@ -59,7 +59,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap:20px
+    gap:20px;
 }
 
 .title{
@@ -92,8 +92,9 @@
 
 .section_title{
     font-weight: bold;
-    font-size: 25px;
+    font-size: 40px;
     font-size: #242424;
+    margin-bottom: 30px;
 }
 
 .target_audience{
@@ -108,13 +109,48 @@
 
 .content_list{
     display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    flex-wrap: wrap;
+    gap:30px
+}
+.content_item_section {
+    width: 45%;
+    font-size: 18px;
+    color: rgb(111, 110, 110);
+}
+
+.course_item:hover{
+   color: #fa571c
+}
+
+.course_item_title {
+    margin-bottom: 15px;
+    color: #000;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.course_item_list{
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
+    gap:10px
+}
+
+.high_school_container{
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
     gap:20px
 }
-.content_item {
-    font-size: 18px;
+.high_school_text{
+    font-size: 25px;
     color: rgb(111, 110, 110);
 }
 
@@ -145,6 +181,19 @@
     .underline{
         width: 80%;
     }
+    .content_list{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    .content_item_section {
+        width:100%
+    }
+    .high_school_container{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
 }
 
 @media (max-width: 500px) {
@@ -157,4 +206,25 @@
     .general_description{
         margin-top: 30px;
     }
+    .section_title{
+        text-align: center;
+    }
+    .content_list{
+      width: 100%
+    }
+    .course_item_title {
+       text-align: center;
+    }
+    .course_item_list{
+        align-items: center;
+    }
+    .course_item{
+        text-align: center;
+    }
+    .target_audience{
+        align-items: center;
+    }
+
+
+
 }

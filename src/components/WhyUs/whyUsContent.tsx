@@ -10,21 +10,21 @@ const WhyUsContent = () =>{
     return (
         <>
             <div className={styles.whyUs}>
-                <div className={styles.header}>
-                    { data.TITLE}
-                </div>               
-                <div className={styles.underline}></div>
+                
+                <div className={styles.header_container}>
+                    <div className={styles.header}>
+                        { data.TITLE}
+                    </div>             
+                    <div className={styles.underline}></div>  
+                </div>
+                
                 <div className={styles.list}>
                     {
                         data.POINTS.map(point=> (
-                            <div className={styles.list_item}>{point}</div>
+                            <div key={point} className={styles.list_item}>{point}</div>
                         ))
                     }
-
                 </div>
-                    
-              
-
             </div>
         </>
    )

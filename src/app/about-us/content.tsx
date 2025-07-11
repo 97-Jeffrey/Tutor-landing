@@ -33,9 +33,9 @@ const Content = () =>{
 
                 <div className={styles.section}>
                     <Image
-                    src={OfficeImage}
-                    alt={'office image'}
-                    className={styles.section_image}
+                        src={OfficeImage}
+                        alt={'office image'}
+                        className={styles.section_image}
                     />
                     <div className={styles.detail_container}>
                         <div className={styles.detail_section}>
