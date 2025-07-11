@@ -27,8 +27,8 @@ interface course {
     content_ch?: string [],
     timing?: string,
     timing_ch?: string,
-    format?: object,
-    format_ch?: string[],
+    format?: {[category: string]: string[]}
+    format_ch?: {[category: string]: string[]},
     image: StaticImageData,
     instructor?: string,
     instructor_ch?: string,
@@ -157,12 +157,6 @@ const COURSES: course[]  = [
                 'Personalized study plans to meet student goals and IB requirements',
             ],
         },
-        format_ch:[
-             `小班授课：每班最少3人开课，最多不超过10人。线下面授确保教学质量。`,
-             `根据课程进度和学生情况，部分课程可接受中途插班。`,
-             `如需了解线上课程选项，欢迎咨询课程顾问获取详细信息。`
-
-        ],
         image: IB_COURSE,
         instructor: 'Miko Ela',
         instructor_ch:'小米',
@@ -188,12 +182,6 @@ const COURSES: course[]  = [
         format:{
             "High School Courses":['All High School Courses']
         },
-        format_ch:[
-             `小班授课：每班最少3人开课，最多不超过10人。线下面授确保教学质量。`,
-             `根据课程进度和学生情况，部分课程可接受中途插班。`,
-             `如需了解线上课程选项，欢迎咨询课程顾问获取详细信息。`
-
-        ],
         image: HIGH_SCHOOL,
     },
 

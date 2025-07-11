@@ -16,7 +16,10 @@ export default function Page () {
 
     const course  = data.COURSES.find(course=> course.slug ===slug)
     const content = language==='en'? course?.content || []: course?.content_ch ||[];
-    const courseFormat = language ==='en'? course?.format || []: course?.format_ch||[];
+    const courseFormat = language ==='en'? course?.format : course?.format_ch
+
+
+      
 
     return (
         <div className={styles.container}>
@@ -58,14 +61,14 @@ export default function Page () {
                     <div className={styles.target_audience}>
                         <div className={styles.section_title}>{language ==='en'?`Avalable Courses`:`所有课程`} </div>
                         <div className={styles.content_list}>
-                            {content.map(item=> (
+                            {content.map((item: string)=> (
                                 <div 
                                     className={styles.content_item_section} key={item}
                                 > 
                                     <div className={styles.course_item_title}>{item}</div>
                                     <div className={styles.course_item_list}>
                                         {
-                                            courseFormat[item].map((each: string, index: string)=>
+                                            courseFormat?.[item].map((each: string, index: number)=>
                                                 <div key={index} className={styles.course_item}>{each}</div>
                                             )
                                         }

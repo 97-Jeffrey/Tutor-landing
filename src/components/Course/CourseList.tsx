@@ -42,7 +42,7 @@ const CourseList =() =>{
                             <div className={styles.course_detail_container}>
                                 <div className={styles.course_avatars}>
                                     <Image 
-                                        src={course.instructor_image}
+                                        src={course.instructor_image || ''}
                                         alt='avatar'
                                         className={styles.avatar}
                                     />
