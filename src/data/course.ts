@@ -27,7 +27,7 @@ interface course {
     content_ch?: string [],
     timing?: string,
     timing_ch?: string,
-    format?: {},
+    format?: object,
     format_ch?: string[],
     image: StaticImageData,
     instructor?: string,

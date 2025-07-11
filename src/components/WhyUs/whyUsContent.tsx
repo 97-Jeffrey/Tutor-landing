@@ -1,7 +1,6 @@
 'use client'
 
 import styles from './whyUs.module.css'
-import { useLanguage } from '@/context/languageContext';
 import data from '@/data/whyUs'; 
 
 
