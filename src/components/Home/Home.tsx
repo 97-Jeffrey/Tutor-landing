@@ -37,7 +37,7 @@ const Hero = () => {
       });
   
       const data = await res.json();
-      setStatus(`${data.message}, We will reach out to you shortly`);
+      setStatus(`${data.message} We will reach out to you shortly`);
       if (res.ok) setForm({ name: '', email: '', message: '', phone:'' });
   };
 

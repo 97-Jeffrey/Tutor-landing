@@ -14,7 +14,7 @@ export async function POST(request) {
   try {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
-      to: process.env.EMAIL_USER,
+      to: 'shaoyuhao970909@gmail.com',
       subject: `Tutor Inquiry From ${name}`,
       text: `${message}, My phone number is ${phone}` ?? `I want to know about your tutoring service, my phone numebr is ${phone}`,
     });
