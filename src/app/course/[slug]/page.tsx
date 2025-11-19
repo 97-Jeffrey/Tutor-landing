@@ -18,9 +18,6 @@ export default function Page () {
     const content = language==='en'? course?.content || []: course?.content_ch ||[];
     const courseFormat = language ==='en'? course?.format : course?.format_ch
 
-
-      
-
     return (
         <div className={styles.container}>
 
@@ -53,9 +50,8 @@ export default function Page () {
                     }
                     {slug === 'high-school'?
                     <div className={styles.high_school_container}>
-                        <div className={styles.section_title}>Available Courses</div>
-                        <div className={styles.high_school_text}>All High School Course</div>
-
+                        <div className={styles.section_title}>{language ==='en' ? 'Available Courses':'课程范围'}</div>
+                        <div className={styles.high_school_text}>{language ==='en' ? 'All High School Courses':"所有高中课程"}</div>
                     </div>
                         :
                     <div className={styles.target_audience}>

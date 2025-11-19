@@ -16,10 +16,15 @@ const Content = () =>{
         MAIN_SERVICES, 
         MAIN_SERVICES_CH,
         MAIN_SERVICES_DETAIL_1,
+        MAIN_SERVICES_DETAIL_1_CH,
         MAIN_SERVICES_DETAIL_2,
+        MAIN_SERVICES_DETAIL_2_CH
     } = data;
     const items = language ==='en'? MAIN_SERVICES: MAIN_SERVICES_CH;
-    const serviceDetail = num ===0 ? MAIN_SERVICES_DETAIL_1: MAIN_SERVICES_DETAIL_2;
+    const serviceDetail = num ===0 ? 
+    ( language =='en'?
+    MAIN_SERVICES_DETAIL_1: MAIN_SERVICES_DETAIL_1_CH): 
+    ( language =='en'? MAIN_SERVICES_DETAIL_2: MAIN_SERVICES_DETAIL_2_CH);
 
 
     return (

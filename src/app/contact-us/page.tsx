@@ -6,17 +6,18 @@ import { useLanguage } from "@/context/languageContext"
 
 export default function Page(){
     const { language }  =useLanguage()
-    const [form, setForm] = useState({ name: '', email: '', message: '' });
+    const [form, setForm] = useState({ name: '', email: '', message: '', phone: '' });
     const [status, setStatus] = useState('');
-  
+
+
     const handleChange = (e:  React.ChangeEvent<HTMLTextAreaElement | HTMLInputElement>) => {
       setForm({ ...form, [e.target.name]: e.target.value });
     };
 
     const handleClickEmail = () =>{
-        const email = 'someone@example.com';
+        const email = 'acplaning.consulting@gmail.com';
         const subject = encodeURIComponent('Consulting for more info');
-        const body = encodeURIComponent('I want to know more about AC tutoring!');
+        const body = encodeURIComponent('I want to know more about AC Planing!');
         window.location.href = `mailto:${email}?subject=${subject}&body=${body}`;
     }
 
@@ -35,9 +36,34 @@ export default function Page(){
         });
     
         const data = await res.json();
-        setStatus(data.message);
-        if (res.ok) setForm({ name: '', email: '', message: '' });
-      };
+        setStatus(`${data.message} we will reach out to you shortly.`);
+        if (res.ok) setForm({ name: '', email: '', message: '', phone:'' });
+    };
+
+    // const createBooking = async () => {
+    //     const start = timeConverter(startDate,'America/Vancouver');
+    //     if (start == null) return;
+    //     const end = addMinute(start, 30);
+    //     const res = await fetch("/api/calendar/create", {
+    //       method: "POST",
+    //       body: JSON.stringify({
+    //         title: `1:1 Consultation with ${form.name}`,
+    //         description: form.message || `A consultation is booked from tutoring app`,
+    //         start,
+    //         end,
+    //         attendees: [
+    //           { email: form.email }
+    //         ],
+    //       }),
+    //       headers: { "Content-Type": "application/json" },
+    //       credentials: "include",
+    //     });
+      
+    //     const data = await res.json();
+    //     console.log("Event created:", data);
+    // }
+
+
     return(
         <>
             <div className={styles.container}>
@@ -51,21 +77,28 @@ export default function Page(){
                     <div className={styles.blocks}>
                         <div className={styles.block}>
                             <div className={styles.block_title}>{language ==='en'? `Call us at`:`请致电`}</div>
-                            <div className={styles.block_content}>123-456-7890</div>
+                            <div className={styles.phones}>
+                                <div className={styles.block_content}>(1)647-994-6481</div>
+                                <div className={styles.block_content}>or</div>
+                                <div className={styles.block_content}>(1)672-991-3194</div>
+                            </div>
                         </div>
                         <div className={styles.block}>
                             <div className={styles.block_title}>{language ==='en'? `Email us at`:`请发邮件至`}</div>
                             <div 
                                 className={styles.block_content}
                                 onClick={handleClickEmail}
-                            >abcde@gmail.com</div>
+                            >acplaning.consulting@gmail.com</div>
                         </div>
                     </div>
 
                     <div className={styles.blocks2}>
-                        <div className={styles.block_title}>{language ==='en'? `Or Leave us a message`:`或详情咨询`} </div>
 
-                        <form onSubmit={handleSubmit}>
+                        <div className={styles.block_group}>
+                            <div className={`${styles.block_title_2}`}>{language ==='en'? `Or Leave us a message`:`或详情咨询`} </div>
+                        </div>
+
+                        <form className={styles.outerForm}>
                             <div 
                                 className={styles.form}
                         
@@ -97,6 +130,19 @@ export default function Page(){
                                 </div>
 
                                 <div className={styles.formItem}>
+                                    <label className={styles.label} htmlFor='phone'>{language ==='en'? `Your phone`:`您的电话`} </label>
+                                    <input 
+                                    name='phone'
+                                    type='tel'
+                                    placeholder={language ==='en'?'Your Phone':"电话"}
+                                    value={form.email}
+                                    onChange={handleChange}
+                                    className={styles.input}
+                                    />
+                                    
+                                </div>
+
+                                <div className={styles.formItem}>
                                     <label className={styles.label} htmlFor='name'>{language ==='en'?`Message`:`资讯信息`}</label>
                                     <textarea 
                                     name='message'
@@ -111,9 +157,10 @@ export default function Page(){
 
                             </div>
 
+                        
                             <button 
-                                type="submit" 
                                 className={styles.send_button}
+                                onClick={handleSubmit}
                             >
                                 {language ==='en'?`Send`: `发送`}
                             </button>

@@ -6,17 +6,17 @@ const HOME_DESCRIPTIONS: string[] = [
    `- Assistance with individual academic research and personalized recommendation letters from PhD-level mentors to strengthen applications.`
 ]
 
-const HOME_TITLE_CH: string =  `为何选择我们`
+const HOME_TITLE_CH: string =  `我们提供`
 
-const HOME_DESCRIPTIONS_CH: string  = `
-我们在本拿比的辅导服务，致力于定期帮助各年级的学生避免学业失败。
-我们的专业导师会针对学生尚未理解的概念进行一对一辅导，
-为他们提供最优质的学习工具和适用于各学科的高效学习技巧，
-助力他们在整个学术旅程中取得成功！
-导师的职责不仅是帮助学生提高成绩，
-更是为了增强他们在学校中的自信心和学习动力。
+const HOME_DESCRIPTIONS_CH: string[]  = [
+  `- 从高中阶段开始提供长期规划指导，确保学生稳步进步并与大学目标保持一致。`,
+  `- 提供 AP、IB、A-Level 及各类高中课程的专业辅导，并根据每位学生的需求量身定制。`,
+  `- 协助学生进行个性化学术研究，并由博士级导师提供量身定制的推荐信，以增强大学申请竞争力。`
+]
 
-`
+
+
+// Header 
 const ABOUT_US_DETAIL_HEADER: string = `
   Strategic Academic & Career Planning
 `
@@ -68,19 +68,11 @@ const ABOUT_US_DETAIL_5: string =`
 `
 
 const ABOUT_US_DETAIL_1_CH: string = `
-    我们相信教育绝不是千篇一律——每一位学生都值得拥有一个根据他们独特的优势、挑战和
-    目标量身打造的学习体验。
-   我们对辅导的热情，源自于对帮助学生发挥最大潜力的深切承诺。
-   无论是提升成绩、备考应试，还是在曾经感到棘手的科目中建立信心，我们都将全程陪伴，给予学生持续的支持与引导。
+   我们的硕士与博士团队不仅提供大学申请支持，更为学生的长期学术发展与职业规划提供专业指导。
 `
 
 const ABOUT_US_DETAIL_2_CH: string =`
-   我们创办这个平台，是因为我们亲眼见证了个性化和专注辅导如何改变一个学生的学习旅程。
-不同于拥挤的课堂或千篇一律的在线视频，我们的辅导课程注重互动性、灵活性与参与感。
-
-我们会为学生匹配专业且有耐心的导师，他们不仅仅是教学者，更是倾听者、鼓励者和激励者。
-
-
+  我们的顾问深谙当前行业趋势与就业挑战，能够帮助学生选择最契合自身优势的专业方向，从而迈向更有意义、具备长期竞争力的未来职业道路。
 `
 
 const ABOUT_US_DETAIL_3_CH: string =`
@@ -91,7 +83,32 @@ const ABOUT_US_DETAIL_3_CH: string =`
 最重要的是，我们会密切关注学生的学习进展，并根据每位学生的节奏与学习风格不断调整教学方法，确保每一次辅导都真正有效。
 `
 
+const ABOUT_US_DETAIL_4_CH: string =`
+  我们以每周和每月为单位紧密跟踪学生的学习进度，确保他们始终保持在正确的轨道上，并及时获得所需的支持。
+`
 
+const ABOUT_US_DETAIL_5_CH: string =`
+  通过及早发现并解决学术上的挑战，我们帮助学生在问题恶化前及时克服障碍。
+`
+
+const ABOUT_US_DETAIL_HEADER_CH: string = `
+  战略性学术与职业规划
+`
+const ABOUT_US_DETAIL_HEADER_2_CH: string = `
+  行业趋势与就业市场洞察
+`
+
+const ABOUT_US_DETAIL_HEADER_3_CH: string = `
+最大化您的教育投入价值
+`
+
+const ABOUT_US_DETAIL_HEADER_4_CH: string = `
+ 持续进度监管
+`
+
+const ABOUT_US_DETAIL_HEADER_5_CH: string = `
+ 主动式问题解决
+`
 
 
 
@@ -107,12 +124,19 @@ const data = {
     ABOUT_US_DETAIL_3,
     ABOUT_US_DETAIL_3_CH,
     ABOUT_US_DETAIL_4,
+    ABOUT_US_DETAIL_4_CH,
     ABOUT_US_DETAIL_5,
+    ABOUT_US_DETAIL_5_CH,
     ABOUT_US_DETAIL_HEADER,
     ABOUT_US_DETAIL_HEADER_2,
     ABOUT_US_DETAIL_HEADER_3,
     ABOUT_US_DETAIL_HEADER_4,
-    ABOUT_US_DETAIL_HEADER_5
+    ABOUT_US_DETAIL_HEADER_5,
+    ABOUT_US_DETAIL_HEADER_CH,
+    ABOUT_US_DETAIL_HEADER_2_CH,
+    ABOUT_US_DETAIL_HEADER_3_CH,
+    ABOUT_US_DETAIL_HEADER_4_CH,
+    ABOUT_US_DETAIL_HEADER_5_CH
 }
 
 

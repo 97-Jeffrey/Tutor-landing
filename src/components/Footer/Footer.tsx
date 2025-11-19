@@ -11,7 +11,7 @@ const Footer  = () =>{
     return (
         <section id='footer' className={styles.container}>
             <div className={styles.main}>
-                <div className={styles.basic_section}>
+                {/* <div className={styles.basic_section}>
                     <div className={styles.address}>
                         <div>208 - 2112 West Broadway</div>
                         <div>Vancouver, BC V6K 2C8</div>
@@ -22,16 +22,14 @@ const Footer  = () =>{
                         <div>Email: info@yeseducation.com</div>
                         <div>Contact Us</div>
                     </div>
-                </div>
+                </div> */}
 
                 <div className={styles.basic_section}>
                     <div className={styles.navigator}>
                         <Link href={'/about-us'}>About Us</Link>
                         <Link href={'/main-service'}>Main Service</Link>
-                        <Link href={'/course'}>Popular Courses</Link>
-                        <Link href={'/team'}>Our Team</Link>
+                        <Link href={'/course'}>Our Courses</Link>
                     </div>
-
                 </div>
 
                 <div className={styles.basic_section}>
@@ -51,7 +49,7 @@ const Footer  = () =>{
             <div className={styles.divider}></div>
 
             <div className={styles.copyright_container}>
-                <div>Copyright 2025 © All rights Reserved YES EDUCATION CENTER INC. </div>
+                <div>Copyright 2025 © All rights Reserved AC Personal Education. </div>
                 <div>Web Design by Jeffrey</div>
 
             </div>

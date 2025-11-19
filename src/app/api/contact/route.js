@@ -1,16 +1,13 @@
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
-  const { name, email, message } = await request.json();
-
-  console.log('EMAIL_USER:', process.env.EMAIL_USER);
-  console.log('EMAIL_PASS is defined:', process.env.EMAIL_PASS);
+  const { name, email, message, phone } = await request.json();
 
   const transporter = nodemailer.createTransport({
     service: 'Gmail',
     auth: {
-      user: process.env.EMAIL_USER,
-      pass: process.env.EMAIL_PASS,
+      user: "shaoyuhao970909@gmail.com",
+      pass: 'yvph tgkg voku hgou',
     },
   });
 
@@ -19,7 +16,7 @@ export async function POST(request) {
       from: `"${name}" <${email}>`,
       to: process.env.EMAIL_USER,
       subject: `Tutor Inquiry From ${name}`,
-      text: message ?? `I want to know about your tutoring service`,
+      text: `${message}, My phone number is ${phone}` ?? `I want to know about your tutoring service, my phone numebr is ${phone}`,
     });
 
     return new Response(JSON.stringify({ message: 'Email sent successfully!' }), {

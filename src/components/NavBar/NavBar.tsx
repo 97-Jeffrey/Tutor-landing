@@ -35,8 +35,8 @@ export default function Navbar() {
           onClick={() => router.push('/')} 
           className={styles.logo}
         >
-          <span className={styles.logoText}>Brand</span>
-          <span className={styles.logoDot}>.</span>
+          <span className={styles.logoText}></span>
+          <span className={styles.logoDot}></span>
         </button>
 
         {/* Desktop Navigation */}

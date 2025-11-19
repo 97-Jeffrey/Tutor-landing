@@ -1,0 +1,25 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 10px;
+    width: 250px;
+}
+  
+  .label {
+    font-size: 20px;
+    font-weight: 500;
+  }
+  
+  .input {
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .input:focus {
+    border-color: #0070f3;
+  }

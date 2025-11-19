@@ -42,7 +42,6 @@ export default function Page () {
 
                                     <div className={styles.course_info_container}>
                                         <div className={styles.course_name}>{language==='en'? course.name: course.name_ch}</div>
-                                        <div className={styles.course_type}>{language==='en'? course.description: course.description_ch}</div>
                                     </div>
 
 

@@ -19,7 +19,9 @@ const Content = () =>{
         ABOUT_US_DETAIL_5,
         ABOUT_US_DETAIL_1_CH,
         ABOUT_US_DETAIL_2_CH,
-        ABOUT_US_DETAIL_3_CH
+        ABOUT_US_DETAIL_3_CH,
+        ABOUT_US_DETAIL_4_CH,
+        ABOUT_US_DETAIL_5_CH,
     } = data;
     return (
         <>
@@ -40,7 +42,7 @@ const Content = () =>{
                     <div className={styles.detail_container}>
                         <div className={styles.detail_section}>
                             <div className={styles.header}>
-                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER: data.HOME_TITLE_CH}
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER: data.ABOUT_US_DETAIL_HEADER_CH}
                             </div>
                             <div className={styles.description}>
                                 {
@@ -52,14 +54,14 @@ const Content = () =>{
                         </div>
                         <div className={styles.detail_section}>
                             <div className={styles.header}>
-                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_2: data.HOME_TITLE_CH}
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_2: data.ABOUT_US_DETAIL_HEADER_2_CH}
                             </div>
 
                             <div className={styles.description}>
                                 {
                                 language==='en'?
                                 ABOUT_US_DETAIL_2:
-                                ABOUT_US_DETAIL_1_CH
+                                ABOUT_US_DETAIL_2_CH
                                 }
                             </div>
                         </div>
@@ -73,13 +75,13 @@ const Content = () =>{
                    <div className={styles.detail_container}>
                         <div className={styles.detail_section}>
                             <div className={styles.header}>
-                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_3: data.HOME_TITLE_CH}
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_3: data.ABOUT_US_DETAIL_HEADER_3_CH}
                             </div>
                             <div className={styles.description}>
                             {
                                 language==='en'?
                                 ABOUT_US_DETAIL_3:
-                                ABOUT_US_DETAIL_2_CH
+                                ABOUT_US_DETAIL_3_CH
                                 }
                             </div>
                         </div>
@@ -87,14 +89,14 @@ const Content = () =>{
                         <div className={styles.detail_section}>
 
                             <div className={styles.header}>
-                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_4: data.HOME_TITLE_CH}
+                                {language === 'en'? data.ABOUT_US_DETAIL_HEADER_4: data.ABOUT_US_DETAIL_HEADER_4_CH}
                             </div>
 
                             <div className={styles.description}>
                             {
                                 language==='en'?
                                 ABOUT_US_DETAIL_4:
-                                ABOUT_US_DETAIL_2_CH
+                                ABOUT_US_DETAIL_4_CH
                                 }
                             </div>
                         </div>
@@ -118,13 +120,13 @@ const Content = () =>{
                     />
                     <div className={styles.detail_container}>
                         <div className={styles.header}>
-                            {language === 'en'? data.ABOUT_US_DETAIL_HEADER_5: data.HOME_TITLE_CH}
+                            {language === 'en'? data.ABOUT_US_DETAIL_HEADER_5: data.ABOUT_US_DETAIL_HEADER_5_CH}
                         </div>
                         <div className={styles.description}>
                            {
                             language==='en'?
                             ABOUT_US_DETAIL_5:
-                            ABOUT_US_DETAIL_3_CH
+                            ABOUT_US_DETAIL_5_CH
                             }
                         </div>
                     </div>

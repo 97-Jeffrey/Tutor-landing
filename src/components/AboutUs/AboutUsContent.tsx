@@ -6,6 +6,7 @@ import { useLanguage } from '@/context/languageContext';
 
 const AboutUSContent = () =>{
     const { language } = useLanguage()
+    const dataToDisplay: string[] = language === 'en'? data.HOME_DESCRIPTIONS : data.HOME_DESCRIPTIONS_CH
     return (
         <div className={styles.aboutUs}>
                 <div className={styles.header}>
@@ -13,7 +14,7 @@ const AboutUSContent = () =>{
                 </div>
                 <div className={styles.underline}></div>
                 <div className={styles.description}>
-                    {data.HOME_DESCRIPTIONS.map(des=>(
+                    {dataToDisplay.map((des: string)=>(
                          (<div key={des} className={styles.description_item}>
                             {des}
                         </div>)
