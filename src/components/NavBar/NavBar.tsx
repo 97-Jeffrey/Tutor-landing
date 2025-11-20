@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { useRouter } from 'next/navigation';
 import { usePathname } from 'next/navigation';
 import { useLanguage } from '@/context/languageContext';
 import styles from './navbar.module.css';
@@ -9,7 +8,6 @@ import Link from 'next/link';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const router = useRouter()
   const pathName = usePathname()
   const { language, toggleLanguage } = useLanguage()
 
@@ -31,13 +29,13 @@ export default function Navbar() {
     <header className={`${styles.header} ${styles.scrolled}`}>
       <div className={styles.container}>
         {/* Logo that scrolls to top */}
-        <button 
+        {/* <button 
           onClick={() => router.push('/')} 
           className={styles.logo}
         >
           <span className={styles.logoText}></span>
           <span className={styles.logoDot}></span>
-        </button>
+        </button> */}
 
         {/* Desktop Navigation */}
         <nav className={styles.desktopNav}>
