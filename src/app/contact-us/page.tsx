@@ -135,7 +135,7 @@ export default function Page(){
                                     name='phone'
                                     type='tel'
                                     placeholder={language ==='en'?'Your Phone':"电话"}
-                                    value={form.email}
+                                    value={form.phone}
                                     onChange={handleChange}
                                     className={styles.input}
                                     />
