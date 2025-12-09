@@ -15,12 +15,12 @@ export async function POST(request) {
     await transporter.sendMail({
       from: `"${name}" <${email}>`,
       to: 'shaoyuhao970909@gmail.com',
-      subject: `🚀 We have a new client: ${name} 🚀`,
-      text: `${message}, 
-            My Email address is ${email},\n
-            My phone number is ${phone},
-            ` ?? 
-            `I want to know about your tutoring service, my phone numebr is ${phone}`,
+      subject: `🚀 We have a new client: ${name}`,
+      text: `
+            ${message}, 
+            My Email address is ${email},
+            My phone number is ${phone}.
+            `
     });
 
     return new Response(JSON.stringify({ message: 'Email sent successfully!' }), {
