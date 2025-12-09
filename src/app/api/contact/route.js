@@ -16,10 +16,7 @@ export async function POST(request) {
       from: `"${name}" <${email}>`,
       to: 'shaoyuhao970909@gmail.com',
       subject: `🚀 We have a new client: ${name}`,
-      text: `${message}, 
-            My Email address is ${email},
-            My phone number is ${phone}.
-            `
+      text: `${message}, My Email address is ${email}, My phone number is ${phone}.`
     });
 
     return new Response(JSON.stringify({ message: 'Email sent successfully!' }), {
